@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <link rel="stylesheet" href="todos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Список задач</h1>
+        <div class="controls">
+            <input type="number" id="todos-count" value="5" min="1" required>
+            <button id="fetch-todos-btn">FETCH TODOS</button>
+        </div>
+        <div id="todos-container" class="todos-container">
+            <!-- Карточки задач будут здесь -->
+        </div>
+        <a href="index.html" class="back-link">На главную</a>
+    </div>
+
+    <script src="todos.js"></script>
+</body>
+</html> 
