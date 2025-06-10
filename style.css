@@ -42,6 +42,7 @@ ul {
 button {
     font-family: 'Rubik', sans-serif;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 strong {
@@ -87,6 +88,23 @@ strong {
     border-radius: 50px;
     color: var(--primary-color);
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.auth-buttons .signup:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    box-shadow: 0 5px 15px rgba(245, 56, 56, 0.3);
+}
+
+.auth-buttons .signin {
+    font-weight: 500;
+    color: var(--text-color-dark);
+    transition: color 0.3s ease-in-out;
+}
+
+.auth-buttons .signin:hover {
+    color: var(--primary-color);
 }
 
 .hero {
@@ -119,6 +137,11 @@ strong {
     font-size: 16px;
     font-weight: 700;
     box-shadow: 0 10px 20px rgba(245, 56, 56, 0.35);
+}
+
+.get-started-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(245, 56, 56, 0.45);
 }
 
 .stats {
@@ -277,6 +300,12 @@ strong {
     font-weight: 700;
 }
 
+.pricing-card button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    box-shadow: 0 5px 15px rgba(245, 56, 56, 0.3);
+}
+
 .pricing-card.recommended {
     border-color: var(--primary-color);
 }
@@ -285,6 +314,11 @@ strong {
     background-color: var(--primary-color);
     color: var(--white);
     box-shadow: 0 10px 20px rgba(245, 56, 56, 0.35);
+}
+
+.pricing-card.recommended .recommended-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(245, 56, 56, 0.45);
 }
 
 .global-network {
@@ -311,7 +345,8 @@ strong {
     margin-top: 50px;
 }
 .sponsors img {
-    height: 40px;
+    height: auto;
+    width: 100%;
 }
 
 .testimonials {
@@ -425,6 +460,10 @@ strong {
     align-items: center;
     margin: 0 10px;
 }
+.arrows button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(245, 56, 56, 0.3);
+}
 .arrows button img {
     width: 20px;
 }
@@ -464,6 +503,11 @@ strong {
     font-size: 16px;
     font-weight: 700;
     box-shadow: 0 10px 20px rgba(245, 56, 56, 0.35);
+}
+
+.subscribe-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(245, 56, 56, 0.45);
 }
 
 .footer {
@@ -508,9 +552,16 @@ strong {
     align-items: center;
 }
 
+.social-icons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px var(--shadow-color);
+}
+
 .copyright {
     color: #AFB5C0;
     margin-top: 30px;
+    color: var(--text-color-dark);
+    margin-bottom: 20px;
 }
 
 .footer-col h3 {
@@ -522,6 +573,10 @@ strong {
 
 .footer-col ul li {
     margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    transition: color 0.3s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -589,7 +644,8 @@ strong {
         margin: 20px auto 100px;
     }
     .sponsors img {
-        height: 50px;
+        height: auto;
+        width: 100%;
     }
     
     .testimonial-nav {
